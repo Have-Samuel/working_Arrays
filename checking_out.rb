@@ -34,3 +34,12 @@ output = stuff[1][0]
 output = stuff.last.first
 
 puts "#{output} is here!"
+
+array = [15, 7, 18, 5, 12, 8, 5, 1]
+
+show = array.index(5)
+puts show
+# show = array.index[5] # Returns an Error
+# puts show
+show = array[5]
+puts show
