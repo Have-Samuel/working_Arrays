@@ -26,3 +26,11 @@ arr2 = ["x","y"]
 puts arr2
 p arr2
 print arr2
+
+stuff = [['goats', 'pigs', 'ducks', 'cows'], ['goose', 'chicken']]
+
+output = stuff[1][0]
+# Alternatively
+output = stuff.last.first
+
+puts "#{output} is here!"
