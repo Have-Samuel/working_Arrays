@@ -78,4 +78,12 @@ food.each_with_index { |val, idx| puts "#{idx}.#{val}" }
 # Note: The problem description and solution aren't completely in agreement. The description asks us to print the index of each element, but the solution prints the index plus 1. 
 food.each_with_index { |val, idx| puts "#{idx + 1}.#{val}" }
 
+digits = [1,2,3,4,5]
 
+# digits.each {  |num| puts num + 2 } 
+new_arr = []
+digits.each do |num|
+    new_arr << num + 2
+end
+p new_arr
+p digits
