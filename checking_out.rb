@@ -57,10 +57,7 @@ puts c = string[19]
 # You run the following code...
 names = ['bob', 'joe', 'susan', 'margaret']
 # names['margaret'] = 'jody' => You are attempting to set the value of an item in an array using a string as the key. Arrays are indexed with integers, not strings. 
-names[2] = 'ghost'
-names[1] = 'alex'
-names[3] = 'Tatiana'
-puts names
+
 # ...and get the following error message:
 
 # TypeError: no implicit conversion of String into Integer
@@ -69,3 +66,16 @@ puts names
 # from /Users/username/.rvm/rubies/ruby-2.5.3/bin/irb:12:in `<main>'
 
 # What is the problem and how can it be fixed?
+
+names[2] = 'ghost'
+names[1] = 'alex'
+names[3] = 'Tatiana'
+puts names
+
+food = ['carrots', 'beas', 'mangoes', 'banana', 'oranges', 'garlic']
+
+food.each_with_index { |val, idx| puts "#{idx}.#{val}" }
+# Note: The problem description and solution aren't completely in agreement. The description asks us to print the index of each element, but the solution prints the index plus 1. 
+food.each_with_index { |val, idx| puts "#{idx + 1}.#{val}" }
+
+
